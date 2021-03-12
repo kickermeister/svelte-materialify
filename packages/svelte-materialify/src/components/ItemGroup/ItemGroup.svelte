@@ -35,7 +35,7 @@
         if (!mandatory) value = null;
       } else if (typeof (val) === 'number') {
         value = val;
-      } else value = [val];
+      } else value = val;
     },
     register: (setValue) => {
       const u = valueStore.subscribe((val) => {
